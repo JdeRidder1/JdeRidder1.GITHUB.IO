@@ -1,0 +1,173 @@
+body {
+  /* Old browsers */
+  background-color: #cccccc;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-color: #cccccc;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #cccccc;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navigation {
+  box-sizing: border-box;
+  background-color: #3587A4;
+  overflow: auto;
+  padding: 18px 50px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+
+.links {
+    margin:30%;
+}
+
+li {
+    float: left;
+    margin-left: 9%;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: lightsteelblue;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.center1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 
+}
+h1 {
+  color: black
+  font-size: 2em;
+  padding-top: 35px;
+  font-family: helvetica;
+  margin-left: 37%;
+}
+
+
+div {
+    height: 50px;
+    width: 100%;
+    margin: 0%;
+    background-color: #3587A4;
+}
+
+
+P.blocktext {
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+}
+
+
+table {
+  height: 40%;
+  left: 10%;
+  margin: 20px auto;
+  overflow-y: scroll;
+  position: static;
+  width: 50%;
+}
+
+thead th {
+  background: #88CCF1;
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+th, td {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  padding: 20px;
+  text-align: left;
+  width: 33.3333%;
+}
+
+th {
+    color: white;
+    background:  #88CCF1;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+td {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+.THeading1 {
+   margin-left: 40%;
+    color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  letter-spacing: 4px;
+  text-transform: uppercase;  
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 800px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;    color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  letter-spacing: 4px;
+  text-transform: uppercase; 
+}
+
+
+.caption {
+  background-color: white;
+  color: black;
+  opacity: 0.75;
+}
