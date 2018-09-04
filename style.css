@@ -67,7 +67,7 @@ h1 {
 }
 
 
-div {
+.banners {
     height: 50px;
     width: 100%;
     margin: 0%;
@@ -170,4 +170,12 @@ div.desc {
   background-color: white;
   color: black;
   opacity: 0.75;
+}
+
+.schema {
+    display: flex;
+    border: black;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
