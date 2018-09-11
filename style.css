@@ -7,7 +7,7 @@ body {
 
 .navigation {
   box-sizing: border-box;
-  background-color: darkblue;
+  background-color: #3587A4;
   overflow: auto;
   padding: 18px 50px;
   position: relative;
@@ -132,6 +132,8 @@ div.gallery {
     border: 1px solid #ccc;
     float: left;
     width: 600px;
+    align-content: center;
+    align-items: center;
 
     
 }
@@ -143,6 +145,8 @@ div.gallery:hover {
 div.gallery img {
     width: 100%;
     height: auto;
+    align-content: center;
+    align-items: center;
    
 }
 
