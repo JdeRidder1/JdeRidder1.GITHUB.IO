@@ -1,178 +1,378 @@
-body {
-  background-color: #cccccc;
-  margin: 0;
-  padding: 0;
+*{
+    margin: 0;
+    padding: 0;
 }
 
 
-.navigation {
-  box-sizing: border-box;
-  background-color: #3587A4;
-  overflow: auto;
-  padding: 18px 50px;
-  position: relative;
-  top: 0;
-  width: 100%;
-  z-index: 999;
+body{
+    font-family: 'Mukta', sans-serif;
 }
 
 
-li {
-    float: left;
-    margin-left: 9%;
+nav ul{ 
+    list-style-type: none;
+    display: none;
 }
 
 
-li a {
+nav ul a{
     display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+    background:#0d1317;
+    padding: 20px;
+    font-size: 17p;
     text-decoration: none;
-}
-
-
-li a:hover {
-    background-color: lightsteelblue;
-}
-
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-
-h1 {
-  color: black
-  font-size: 2em;
-  padding-top: 35px;
-  font-family: helvetica;
-  justify-content: center; 
-    text-align: center;
- }
-
-
-.blocktext {
-    color: black;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50em;
-    align-items: center;
-    text-align: center;
-}
-
-
-table {
-  height: 40%;
-  left: 10%;
-  margin: 20px auto;
-  overflow-y: scroll;
-  position: static;
-  width: 50%;
-}
-
-
-thead th {
-  background: #88CCF1;
-  color: #FFF;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  font-weight: 100;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-
-tr {
-  background: #f4f7f8;
-  border-bottom: 1px solid #FFF;
-  margin-bottom: 5px;
-}
-
-
-th, td {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  padding: 20px;
-  text-align: left;
-  width: 33.3333%;
-}
-
-
-th {
-    color: white;
-    background:  #88CCF1;
-    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    color: #ad344e;
+    transition: color 1s ease, background 1s ease, padding 1s ease;
 }
 
 
-td {
-    color: black;
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 2px;
+nav ul a:hover{
+    background: #474747;
+    color: #e0e0ce;
+    padding-left: 30px;
 }
 
 
-.THeading1 {
-  margin-left: 40%;
-  color: #FFF;
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  letter-spacing: 4px;
-  text-transform: uppercase;  
+.nav-container img{
+    width: 100px; 
+    align-self: center;
 }
 
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 600px;
-    align-content: center;
+.nav-container{
+    padding: 0 20px;
+    background: #474747;
+    border-bottom: 3px solid #ad343e;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 7px;
+    background: #ad343e;
+}
+.btn{
+    padding: 2px;
+    display: inline-block;
+    border: 2px solid #ad343e;
+    align-self: center;
+}
+
+
+header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.1)), url(images/0Background.jpg)center/cover fixed no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    flex: 0 0 auto;
+}
+
+
+.banner{
+    flex:1 0 auto;
+    display: flex; 
+    justify-content: center;
     align-items: center;
-
-    
+    text-align: center;
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
+
+.banner h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #ad343e;
 }
 
-div.gallery img {
+
+.banner h3{
+    text-transform: capitalize;
+    font-size: 30px;
+    color: white;
+}
+
+
+.banner-icons{
+    padding: 20px;
+}
+
+
+.banner-icons a{
+    display: inline-block;
+    font-size: 30px;
+    background: #474747;
+    padding: 5px 10px;
+    margin: 0 10px;
+        border-radius: 50%;
+        color: #f5f3f5;
+        transition:  color 1s ease, transform 1s ease;
+}
+
+
+.banner-icons a:hover{
+     color: #ad343e;
+    transform: translateY(-10px)
+}
+
+
+nav{
+    position: fixed;
     width: 100%;
-    height: auto;
-    align-content: center;
+    z-index: 10%;
+}
+
+
+
+@media screen and (min-width:777px){
+    .nav-container{
+      display: none;  
+    }
+    nav ul{
+        display: flex!important;
+        flex-wrap: wrap;
+        justify-content: center;
+        background:rgba(13,19,23,0.8);
+    }
+    nav ul a{
+        background: transparant;
+    }
+    nav ul a:hover{
+        background: transparant;
+        padding-left: 20px;
+    }  
+}
+
+
+
+/*                      Convincing Convincing Convincing                          */
+
+
+.convincing {
+    min-height: 80vh;
+    background: url(images/0Bridge.jpg)center/cover fixed no-repeat;
+    display: flex;
     align-items: center;
+}
+
+
+.convince {
+    color: #f5f3f5;
+    display: flex;
+    margin: 40px;
+}
+
+
+.convince-icon {
+    align-self: center;
+    font-size: 60px;
+    margin-right: 20px;
+    padding: 20px;
+    border: 3px solid #f5f3f5;
+    border-radius: 50%;
+}
+
+
+h2 {
+    color: white;
+    display: flex;
+    margin: 40px;
+}
+
+@media screen and (min-width:576px){
+    .convincing-center{
+        width: 70%; 
+    }
+}
+
+@media screen and (min-width:776px){
+    .convincing-center{
+        width: 50%; 
+    }
+}
+
+
+.profiling {
+    min-height: 80vh;
+    background: url(images/4k-wallpaper-android-wallpaper-art-325044.jpg)center/cover fixed no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+
+.profile {
+    color: #f5f3f5;
+    display: flex;
+    margin: 40px;
+}
+
+
+.profiling-icon {
+    align-self: center;
+    font-size: 60px;
+    margin-right: 20px;
+    padding: 20px;
+    border: 3px solid #f5f3f5;
+    border-radius: 50%;
+}
+
+/*################################Illustraties#####################################*/
+.illustraties{
+    padding: 0 0 100px 0;
+    background: #f5f3f5;
+}
+
+.title h2 {
+font-size: 40px;
+text-align: center;
+text-transform: uppercase;
+color: #474747;
+}
+
+
+.title-underline{
+    background: #ad343e;
+    width: 100px;
+    height: 4px;
+    margin: 10px auto
+}
+
+.title{
+    padding: 50px 0;
+}
+
+.illustratie {
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    overflow: hidden;
    
 }
 
-div.desc {
-    padding: 15px;
-    text-align: center;    color: #FFF;
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    letter-spacing: 4px;
-    text-transform: uppercase; 
+.illustraties img {
+    width: 100%;
+    display: block;
+    transition: opacity 2s ease, transform 2s ease;
 }
 
-
-.caption {
-  background-color: white;
-  color: black;
-  opacity: 0.75;
+.illustraties img:hover{
+    opacity: 0.3;
+    cursor: pointer;
+    transform: scale(1.3)
+        
 }
 
-.schema {
+@media screen and (min-width:576px){
+    .illustraties-center{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .illustratie{
+    flex:0 0 calc(50%)
+    }
+}
+
+@media screen and (min-width:576px){
+    .illustraties-center{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .illustratie{
+    flex:0 0 calc(33.3333%)
+    }
+}
+
+/*###################################ABOUT################################*/
+
+.about {
+    min-height: 100vh;
+    padding: 100px 0;
+    background: url("images/0Bridge.jpg")center/cover fixed no-repeat;
     display: flex;
-    border: black;
-    overflow: hidden;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
+
+.about-test {
+    background: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.about-test h3 {
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.about-test .fa-user-graduate , .fa-briefcase, .fa-dumbbell, .fa-book{
+    font-size: 60px;
+    color: #ad343e;
+    margin: 20px 0;
+}
+
+.about-test p{
+    line-height: 2;
+}
+
+@media screen and (min-width:776px){
+    .about-test{
+        max-width: 50%;
+        border-radius: 30px;
+    }
+    .about-test p{
+        margin: 0   auto;
+    }
+}
+
+/*##########################CONTACT##################################*/
+
+.contact {
+    min-height: 80vh;
+    background: url(images/0Background.jpg)center/cover fixed no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card {
+    background: rgba(0,0,0,0.6);
+    flex:0 0 80%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form { 
+    flex: 0 0 60%;
+    display: 40px 0;
+    flex-direction: column;
+}
+
+form input {
+    margin: 10px 0;
+}
+
+form h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #ad343e
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
