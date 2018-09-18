@@ -154,7 +154,7 @@ nav{
 
 .convincing {
     min-height: 80vh;
-    background: url(images/0Bridge.jpg)center/cover fixed no-repeat;
+    background: url("/images/0Bridge.jpg")center/cover fixed no-repeat;
     display: flex;
     align-items: center;
 }
@@ -306,7 +306,14 @@ color: #474747;
     text-transform: capitalize;
 }
 
-.about-test .fa-user-graduate , .fa-briefcase, .fa-dumbbell, .fa-book{
+.about-test h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    color:  #ad343e;
+}
+
+.about-test .fa-user-graduate , .fa-briefcase, .fa-dumbbell, .fa-book, .fa-brain, .fa-anchor, .fa-money-check-alt, .fa-palette{
+
     font-size: 60px;
     color: #ad343e;
     margin: 20px 0;
@@ -330,7 +337,7 @@ color: #474747;
 
 .contact {
     min-height: 80vh;
-    background: url(images/0Background.jpg)center/cover fixed no-repeat;
+    background: url("/images/0Background.jpg")center/cover fixed no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
