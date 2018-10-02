@@ -312,7 +312,7 @@ color: #474747;
     color:  #ad343e;
 }
 
-.about-test .fa-user-graduate , .fa-briefcase, .fa-dumbbell, .fa-book, .fa-brain, .fa-anchor, .fa-money-check-alt, .fa-palette{
+.about-test .fa-user-graduate , .fa-briefcase, .fa-dumbbell, .fa-book, .fa-brain, .fa-anchor, .fa-money-check-alt, .fa-palette, .fa-user-md, {
 
     font-size: 60px;
     color: #ad343e;
@@ -355,7 +355,7 @@ color: #474747;
 
     
     
-}
+
 
 form { 
     flex: 0 0 60%;
